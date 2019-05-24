@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret1"
+    },
+    {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret2"
+    }
+  ],
+  "islands": [
+    {
+      "area": 40000,
+      "name": "Lough a",
+      "category" : "South",
+      "location": {
+        "latitude": 20,
+        "longitude": 20
+      },
+      "pictures": [],
+      "description": "Lough Foyle C660-390 Sheet 3/4 Embarkation The logical embarkation point for the outer regions of Lough Foyle is Magilligan Point, by the Martello Tower. Access is by the B202 past the prison and rifle range. Do not block roads. Park by the hotel. The whole region is a security area, frequently patrolled. Especially beware of the military zone on the beach immediately to the E of the point, Benone Beach, on which it’s better not to land (certainly not while firing is going on). Accurate information for those passing the firing range can now be obtained from CANI. Further to the E, beyond the military zone, there is public access at about C716-363. There is a concrete slip across the beach. However, the beach surfs and there is a strong tidal drift. This may have relevance for launching. Expect caravans, lifeguards, and beach casting anglers. Military installations on both sides show the importance of the lough in such terms. The whole lough is less interesting inwards to the SW. There are large areas of mudflats on the E side. That said, it is a busy, well marked and well lit area. It is excellent for night navigation, sheltered but with strong tides. If paddling up into the city, it is possible to take out at Prehen Boat Club upstream of the Craigavon Bridge on the E bank. Road access is better on the Donegal side and there are nice secluded beaches."
+    },
+    {
+      "area": 4000,
+      "name": "Lough b",
+      "category" : "North",
+      "location": {
+        "latitude": 25,
+        "longitude": -8.9
+      },
+      "pictures": [],
+      "description": "Lough Foyle C660-390 Sheet 3/4 Embarkation The logical embarkation point for the outer regions of Lough Foyle is Magilligan Point, by the Martello Tower. Access is by the B202 past the prison and rifle range. Do not block roads. Park by the hotel. The whole region is a security area, frequently patrolled. Especially beware of the military zone on the beach immediately to the E of the point, Benone Beach, on which it’s better not to land (certainly not while firing is going on). Accurate information for those passing the firing range can now be obtained from CANI. Further to the E, beyond the military zone, there is public access at about C716-363. There is a concrete slip across the beach. However, the beach surfs and there is a strong tidal drift. This may have relevance for launching. Expect caravans, lifeguards, and beach casting anglers. Military installations on both sides show the importance of the lough in such terms. The whole lough is less interesting inwards to the SW. There are large areas of mudflats on the E side. That said, it is a busy, well marked and well lit area. It is excellent for night navigation, sheltered but with strong tides. If paddling up into the city, it is possible to take out at Prehen Boat Club upstream of the Craigavon Bridge on the E bank. Road access is better on the Donegal side and there are nice secluded beaches."
+    },
+    {
+      "area": 400,
+      "name": "Lough c",
+      "category" : "South",
+      "location": {
+        "latitude": 20,
+        "longitude": 40
+      },
+      "pictures": [],
+      "description": "Lough Foyle C660-390 Sheet 3/4 Embarkation The logical embarkation point for the outer regions of Lough Foyle is Magilligan Point, by the Martello Tower. Access is by the B202 past the prison and rifle range. Do not block roads. Park by the hotel. The whole region is a security area, frequently patrolled. Especially beware of the military zone on the beach immediately to the E of the point, Benone Beach, on which it’s better not to land (certainly not while firing is going on). Accurate information for those passing the firing range can now be obtained from CANI. Further to the E, beyond the military zone, there is public access at about C716-363. There is a concrete slip across the beach. However, the beach surfs and there is a strong tidal drift. This may have relevance for launching. Expect caravans, lifeguards, and beach casting anglers. Military installations on both sides show the importance of the lough in such terms. The whole lough is less interesting inwards to the SW. There are large areas of mudflats on the E side. That said, it is a busy, well marked and well lit area. It is excellent for night navigation, sheltered but with strong tides. If paddling up into the city, it is possible to take out at Prehen Boat Club upstream of the Craigavon Bridge on the E bank. Road access is better on the Donegal side and there are nice secluded beaches."
+    },
+    {
+      "area": 400,
+      "name": "Lough d",
+      "category" : "North",
+      "location": {
+        "latitude": 55,
+        "longitude": -6.7
+      },
+      "pictures": [],
+      "description": "Lough Foyle C660-390 Sheet 3/4 Embarkation The logical embarkation point for the outer regions of Lough Foyle is Magilligan Point, by the Martello Tower. Access is by the B202 past the prison and rifle range. Do not block roads. Park by the hotel. The whole region is a security area, frequently patrolled. Especially beware of the military zone on the beach immediately to the E of the point, Benone Beach, on which it’s better not to land (certainly not while firing is going on). Accurate information for those passing the firing range can now be obtained from CANI. Further to the E, beyond the military zone, there is public access at about C716-363. There is a concrete slip across the beach. However, the beach surfs and there is a strong tidal drift. This may have relevance for launching. Expect caravans, lifeguards, and beach casting anglers. Military installations on both sides show the importance of the lough in such terms. The whole lough is less interesting inwards to the SW. There are large areas of mudflats on the E side. That said, it is a busy, well marked and well lit area. It is excellent for night navigation, sheltered but with strong tides. If paddling up into the city, it is possible to take out at Prehen Boat Club upstream of the Craigavon Bridge on the E bank. Road access is better on the Donegal side and there are nice secluded beaches."
+    }
+  ],
+  "pictures": [
+    {
+      "title": "test title1",
+      "img": "test img1"
+    },
+    {
+      "title": "test title2",
+      "img": "test img2"
+    },
+    {
+      "title": "test title3",
+      "img": "test img3"
+    },
+    {
+      "title": "test title4",
+      "img": "test img4"
+    }
+  ],
+  "reviews": [
+    {
+      "review": "test review1",
+      "bestFor": "average"
+    },
+    {
+      "review": "test review2",
+      "bestFor": "average"
+    },
+    {
+      "review": "test review3",
+      "bestFor": "taverage"
+    },
+    {
+      "review": "test review4",
+      "bestFor": "average"
+    }
+  ],
+
+  "newUser":
+  {
+    "firstName": "Maggie",
+    "lastName": "Simpson",
+    "email": "maggie@simpson.com",
+    "password": "secret"
+  },
+  "newIsland":
+  {
+    "area": 123,
+    "name": "Lough New",
+    "category" : "North",
+    "location": {
+      "latitude": 52,
+      "longitude": -63.7
+    },
+    "pictures": [],
+    "description": "Test Description"
+  }
+
+}

@@ -1,0 +1,31 @@
+<!--DISPLAYS ALL USERS FOR THE ADMIN-->
+
+<section class="ui raised segment">
+        <article>
+            <table class="ui celled table segment">
+                <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {{#each users}}
+                    <tr>
+                        <td> {{firstName}} </td>
+                        <td> {{lastName}} </td>
+                        <td> {{email}} </td>
+                        <td>
+                            <a href=/deleteuser/{{id}}" class="ui red icon button">
+                                <i class="icon trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </article>
+</section>

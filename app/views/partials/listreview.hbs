@@ -1,0 +1,33 @@
+    <div class="ui stacked segment">
+        <h3 class="ui dividing header"> Reviews to Date </h3>
+        <table class="ui celled table segment">
+            <thead>
+            <tr>
+                <th>Island</th>
+                <th>Rating</th>
+                <th>Review</th>
+                <th>Reviewed By</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+        {{#each reviews}}
+            <tr>
+                <td> {{island.name}}</td>
+                <td> {{bestFor}}</td>
+                <td> {{review}}</td>
+                <td> {{reviewer.firstName}} {{reviewer.lastName}}</td>
+                <td><a href=/reviewlist/deletereview/{{id}}" class="ui red icon button"><i class="large icon trash"></i></a></td>
+            </tr>
+        {{/each}}
+            </tbody>
+        </table>
+
+
+    </div>
+
+<section class="ui raised segment">
+    {{> addreview }}
+</section>
+
+

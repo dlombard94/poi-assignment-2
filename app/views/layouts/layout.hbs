@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+    </style>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+</head>
+<body>
+<section class="ui container">
+    {{{content}}}
+</section>
+<script>
+    $(document).ready(function () {
+        $('.ui.dropdown').dropdown({ on: 'hover' });
+    });
+    $('.message .close').on('click', function () {
+        $(this).closest('.message').transition('fade');
+    });
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

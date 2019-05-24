@@ -1,0 +1,53 @@
+<!--FORM FOR ADDING ISLAND-->
+
+<form class="ui stacked segment form" action="/addisland" method="POST">
+    <div class="three fields">
+        <div class="field">
+            <label>Name</label>
+            <input placeholder="Skellig Island" type="text" name="name">
+        </div>
+        <div class="field">
+            <label>Area (m2)</label>
+            <input placeholder="200" type="number" name="area">
+        </div>
+        <div class="field">
+            <label>Location</label>
+            <select class="ui fluid search dropdown" name="category">
+                <option value="">Location</option>
+                <option value="1">North</option>
+                <option value="1">East</option>
+                <option value="2">West</option>
+                <option value="3">South</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="two fields">
+        <div class="field">
+            <label>Longitude</label>
+            <input placeholder="55.5" type="number" name="longitude">
+        </div>
+        <div class="field">
+            <label>Latitude</label>
+            <input placeholder="-7.4" type="number" name="latitude">
+        </div>
+    </div>
+
+    <div class="one field">
+        <div class="field">
+            <label>Description</label>
+            <textarea placeholder="Describe the island....." rows="7" name="description"></textarea>
+        </div>
+        <div class="ui success message">
+            <div class="header">Form Completed</div>
+            <p>You've succesfully added an Island to the list!</p>
+        </div>
+        <button class="ui blue submit button">Add Island</button>
+    </div>
+</form>
+
+
+
+
+
+

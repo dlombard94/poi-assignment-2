@@ -1,0 +1,61 @@
+<!--VIEW WHOCH DISPALY CATEGORIZED ISLANDS PASSED IN VIA CONTROLLER-->
+
+{{#each categorizedIslands}}
+    <div class="ui segment">
+        <div class="ui two column very relaxed grid">
+            <div class="column">
+                <h3 class="ui block header">
+                    {{name}}
+                </h3>
+                <div class="ui horizontal segments">
+                    <div class="ui segment">
+                        <p><b>Area (m2): </b>{{area}}</p>
+                    </div>
+                    <div class="ui segment">
+                        <p><b>Location: </b>{{category}}</p>
+                    </div>
+                    <div class="ui segment">
+                        <p><b>Added By: </b>{{addedBy.firstName}} {{addedBy.lastName}}</p>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <p><b>Description: </b>{{description}}</p>
+                </div>
+                <div class="ui horizontal segments">
+                    <div class="ui center aligned segment">
+                        <a href=/islandlist/deleteisland/{{id}}" class="ui red icon button">
+                            <i class="large icon trash"></i>
+                        </a>
+                    </div>
+                    <div class="ui center aligned segment">
+                        <a href=/islandlist/showisland/{{id}}" class="ui green icon button">
+                            <i class="icon large info circle"></i>
+                        </a>
+                    </div>
+                    <div class="ui center aligned segment">
+                        {{> uploadpicture}}
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                {{#each pictures}}
+
+                    <div class="ui attached segment">
+                        <a  class="ui medium image" href={{img}} >
+                            <img src={{img}}>
+                        </a>
+                        <button class="ui centre aligned button">
+                            <a  href="/deletepicture/{{island.id}}/{{id}}" class="ui compact icon fluid button">
+                                <i class="centre aligned red trash icon"></i>
+                            </a>
+                        </button>
+                    </div>
+
+                {{/each}}
+            </div>
+        </div>
+        <div class="ui vertical divider">
+
+        </div>
+    </div>
+{{/each}}

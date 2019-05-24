@@ -1,0 +1,19 @@
+<!--FORM TO UPLOAD A LOCAL PIC TO CLOUDINARY AND WEB APP FOR A SPECIFIC ISLAND-->
+
+<form action="/uploadpicture/{{id}}" method="post" enctype="multipart/form-data">
+    <div class="two fields">
+
+        <div class="field">
+            <label>Title</label>
+            <input placeholder="Title" type="text" name="title">
+            <p></p>
+        </div>
+
+        <div class="field">
+            <input type="file" name="file">
+            <p></p>
+        </div>
+
+    </div>
+    <button class="ui mini orange submit button">Upload</button>
+</form>

@@ -1,0 +1,55 @@
+<!--FORM TO UPDATE SPECIFIC ISLAND VALUES-->
+
+<form class="ui stacked segment form" action="/updateisland/{{island.id}}" method="POST">
+    <div class="three fields">
+        <div class="field">
+            <label>Name</label>
+            <input value="{{island.name}}" type="text" name="name">
+        </div>
+        <div class="field">
+            <label>Area (m2)</label>
+            <input value="{{island.area}}" type="number" name="area">
+        </div>
+        <div class="field">
+            <label>Location</label>
+            <select class="ui fluid search dropdown" name="category">
+                <option value="">{{island.category}}</option>
+                <option value="1">North</option>
+                <option value="1">East</option>
+                <option value="2">West</option>
+                <option value="3">South</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="two fields">
+        <div class="field">
+            <label>Longitude</label>
+            <input value="{{island.location.longitude}}" type="number" name="longitude">
+        </div>
+        <div class="field">
+            <label>Latitude</label>
+            <input value="{{island.location.latitude}}" type="number" name="latitude">
+        </div>
+    </div>
+
+    <div class="one field">
+
+        <div class="field">
+            <label>Description</label>
+            <textarea rows="15" name="description">{{{island.description}}}</textarea>
+        </div>
+
+        <div class="ui success message">
+            <div class="header">Form Completed</div>
+            <p>You've succesfully updated this entry!</p>
+        </div>
+
+        <button class="ui blue submit button">
+            <i class="icon exchange"></i>
+            Update Island
+        </button>
+
+    </div>
+</form>
+
