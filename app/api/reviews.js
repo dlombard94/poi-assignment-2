@@ -6,7 +6,9 @@ const Island = require('../models/island')
 
 const Reviews = {
     findAll: {
-        auth: false,
+        auth: {
+            strategy: 'jwt',
+        },
         handler: async function (request, h) {
             const reviews = await Review.find();
             return reviews;
@@ -14,7 +16,9 @@ const Reviews = {
     },
 
     findByIsland: {
-        auth: false,
+        auth: {
+            strategy: 'jwt',
+        },
         handler: async function(request, h) {
             console.log(request.params.id);
             const reviews = await Review.find({ island: request.params.id });
@@ -22,7 +26,9 @@ const Reviews = {
         }
     },
     addReview: {
-        auth: false,
+        auth: {
+            strategy: 'jwt',
+        },
         handler: async function(request, h) {
             let review = new Review(request.payload);
             const island = await Island.findOne({ _id: request.params.id });
@@ -35,14 +41,18 @@ const Reviews = {
         }
     },
     deleteReviews: {
-        auth: false,
+        auth: {
+            strategy: 'jwt',
+        },
         handler: async function(request, h) {
             await Review.deleteMany({island: request.params.id });
             return { success: true };
         }
     },
     deleteAll: {
-        auth: false,
+        auth: {
+            strategy: 'jwt',
+        },
         handler: async function(request, h) {
             await Review.deleteMany({});
             return { success: true };
