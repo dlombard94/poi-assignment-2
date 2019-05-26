@@ -20,7 +20,7 @@ suite('Review API tests', function() {
 
     suiteTeardown(async function() {
         await poiService.deleteAllUsers();
-        poiService.clearAuth();
+        await poiService.clearAuth();
     });
 
     setup(async function() {
@@ -81,5 +81,16 @@ suite('Review API tests', function() {
         await poiService.deleteAllReviews();
         const r2 = await poiService.getReviews(returnedIsland._id);
         assert.equal(r2.length, 0);
+    });
+
+    test('create a review and check reviewer', async function() {
+        const returnedIsland = await poiService.createIsland(newIsland);
+        await poiService.addReview(returnedIsland._id, reviews[0]);
+        const returnedReviews = await poiService.getReviews(returnedIsland._id);
+        assert.isDefined(returnedReviews[0].reviewer);
+        console.log(newUser);
+        const users = await poiService.getUsers();
+        console.log(users);
+        assert(_.some([users[0]], newUser), 'returnedUser must be a superset of newUser');
     });
 });

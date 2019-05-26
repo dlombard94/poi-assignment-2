@@ -98,13 +98,18 @@ class PoiService {
     }
 
     async getUsers() {
-        const response = await axios.get(this.baseUrl + '/api/users');
-        return response.data;
+        try {
+            const response = await axios.get(this.baseUrl + '/api/users');
+            return response.data;
+        } catch (e) {
+            return null;
+        }
     }
 
     async getUser(id) {
         try {
             const response = await axios.get(this.baseUrl + '/api/users/' + id);
+            console.log(response.data);
             return response.data;
         } catch (e) {
             return null;
@@ -112,8 +117,12 @@ class PoiService {
     }
 
     async createUser(newUser) {
-        const response = await axios.post(this.baseUrl + '/api/users', newUser);
-        return response.data;
+        try {
+            const response = await axios.post(this.baseUrl + '/api/users', newUser);
+            return response.data;
+        } catch (e) {
+            return null;
+        }
     }
 
     async addPicture(id, picture) {

@@ -2,7 +2,8 @@
 
 const Boom = require('boom');
 const Review = require('../models/review');
-const Island = require('../models/island')
+const Island = require('../models/island');
+const utils = require('./utils.js');
 
 const Reviews = {
     findAll: {
@@ -30,12 +31,14 @@ const Reviews = {
             strategy: 'jwt',
         },
         handler: async function(request, h) {
+            const userId = utils.getUserIdFromRequest(request);
             let review = new Review(request.payload);
             const island = await Island.findOne({ _id: request.params.id });
             if (!review) {
                 return Boom.notFound('No Island with this id');
             }
             review.island = island._id;
+            review.reviewer = userId;
             review = await review.save();
             return review;
         }
