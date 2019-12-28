@@ -14,7 +14,7 @@
     "cloudinary": "^1.13.2",
     "dotenv": "^6.2.0",
     "express-fileupload": "^1.1.1-alpha.3",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.3.0",
     "hapi": "^18.0.0",
     "hapi-auth-cookie": "^9.1.0",
     "hapi-auth-jwt2": "^8.6.1",
